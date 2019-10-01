@@ -1,0 +1,10 @@
+Highlights & Device Specific Changes:
+Build type: Testing
+Device: Pocophone F1 (beryllium)
+Device maintainer: gwolf2u
+Required firmware: 10.3.7.0
+
+
+===== 01 October, 2019 =====
+
+- Initiate changelog
