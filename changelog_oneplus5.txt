@@ -1,0 +1,79 @@
+Highlights & Device Specific Changes:
+
+========================================
+9th October, 2019
+
+Build type: Beta
+Device: Oneplus 5/T (cheeseburger/dumpling)
+Device maintainer: neobuddy89
+Required firmware: 9.0.8
+
+Short changelog:
+* Added toggle for statusbar double tap to sleep
+* Added toggle to use statusbar for brightness control
+* Added customization for Navigation bar + Gesture settings
+* Added toggles for more statusbar icons
+* Added customization for statusbar clock position
+* cheeseburger: Added HW Keys disable and accidental touch prevention toggles
+* Added NFC tile and statusbar icon
+* Fixed Settings > Apps > Notification crash
+* cheeseburger/dumpling: Added audio amplifier module
+* cheeseburger/dumpling: Attempted fix telephony noise
+* cheeseburger/dumpling: Fixed display service
+* cheeseburger/dumpling: Upstreamed kernel to v4.4.196
+
+================================================================================
+6th October, 2019
+
+Build type: Beta
+Device: Oneplus 5/T (cheeseburger/dumpling)
+Device maintainer: neobuddy89
+Required firmware: 9.0.8
+
+Short changelog:
+* Statusbar icon toggle for VoLTE, 4G/LTE, Data disable indicator, Roaming indicator
+* Lockscreen toggle for Media cover art, Battery info
+* Updated launcher app
+* Improved overall stability
+* Updated Recorder app + Recording tiles
+* cheeseburger/dumpling: Fixed VoLTE (toggle VoLTE under network settings)
+* cheeseburger/dumpling: Fixed WiFi hotspot
+* cheeseburger: Added button backlight settings (crdroid settings > buttons)
+* dumpling: Fixed fingerprint issue
+* cheeseburger/dumpling: Kernel update and fine tunings
+* cheeseburger/dumpling: Updated HALs
+* cheeseburger/dumpling: Added Dash Charging overlay for battery info on lockscreen
+* cheeseburger/dumpling: Fixed DRM issues
+* cheeseburger/dumpling: Moved volume panel to left
+* cheeseburger/dumpling: Updated few blobs from Android 10 devices
+
+========================================
+28th September, 2019
+
+Build type: Testing
+Device: Oneplus 5/T (cheeseburger/dumpling)
+Device maintainer: neobuddy89
+Required firmware: 9.0.8
+
+Short changelog:
+* Fixed and added new boot animation
+* Fixed FC with Digital Wellbeing app
+* Added Recorder app
+* Initial crDroid Settings integration
+* Buttons customization for crDroid Settings
+* cheeseburger/dumpling: Fixed Bluetooth connectivity issues
+* cheeseburger/dumpling: Fixed Battery drain issue
+* cheeseburger/dumpling: Fixed alert slider (crdroid settings > buttons > additional buttons)
+
+========================================
+25th September, 2019
+
+Build type: Testing
+Device: Oneplus 5/T (cheeseburger/dumpling)
+Device maintainer: neobuddy89
+Required firmware: 9.0.8
+
+Short changelog:
+* Initial build
+
+========================================
