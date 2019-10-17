@@ -1,12 +1,23 @@
 {
   "response": [
     {
-      "datetime": 1570033649,
-      "filename": "crDroidAndroid-10.0-20191003-cheeseburger-v6.0.zip",
-      "id": "675e1d94f2a30eb52f2804a104136928928f7ef8",
-      "size": 810299195,
-      "url": "https://dl.crdroid.net/cheeseburger.zip",
-      "version": "6.0"
+        "maintainer": "Pranav Vashi (neobuddy89)",
+        "oem": "OnePlus",
+        "filename": "crDroidAndroid-10.0-20191017-cheeseburger-v6.0.zip",
+        "download": "https://sourceforge.net/projects/crdroid/files/cheeseburger/crdroid-6.x/crDroidAndroid-10.0-20191017-cheeseburger-v6.0.zip/download",
+        "timestamp": 1671275693,
+        "md5": "dfacaa60ff51d563d668d341dee71b59282e268f",
+        "size": 810247173,
+        "version": "6.0",
+        "buildtype": "Beta",
+        "forum": "http://crdroid.net/forum",
+        "gapps": "https://sourceforge.net/projects/opengapps/files/arm64/beta/",
+        "firmware": "https://sourceforge.net/projects/crdroid/files/cheeseburger/crdroid-6.x/firmware/firmware_9.0.9_oneplus5.zip/download",
+        "modem": "https://dummymodem.link",
+        "bootloader": "https://dummybootloader.link",
+        "recovery": "https://sourceforge.net/projects/crdroid/files/cheeseburger/crdroid-p/recovery/twrp-3.3.0-0-20190423-codeworkx-cheeseburger.img/download",
+        "paypal": "https://paypal.me/neobuddy89",
+        "telegram": "https://t.me/crDroid_OnePlus5_5T"
     }
   ]
 }
