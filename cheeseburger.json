@@ -11,6 +11,7 @@
         "version": "6.0",
         "buildtype": "Beta",
         "forum": "http://crdroid.net/forum",
+        "changelog": "https://raw.githubusercontent.com/crdroidandroid/android_vendor_crDroidOTA/10.0/changelog_oneplus5.txt",
         "gapps": "https://sourceforge.net/projects/opengapps/files/arm64/beta/",
         "firmware": "https://sourceforge.net/projects/crdroid/files/cheeseburger/crdroid-6.x/firmware/firmware_9.0.9_oneplus5.zip/download",
         "modem": "https://dummymodem.link",
