@@ -1,12 +1,23 @@
 {
   "response": [
     {
-      "datetime": 1570733745,
-      "filename": "crDroidAndroid-10.0-20191001-beryllium-v6.0.zip",
-      "id": "dfacaa60ff51d563d668d341dee71b59282e268f",
-      "size": 810247173,
-      "url": "https://dl.crdroid.net/beryllium.zip",
-      "version": "6.0"
+        "maintainer": "Lup Gabriel (gwolfu)",
+        "oem": "OnePlus",
+        "filename": "crDroidAndroid-10.0-20191020-beryllium-v6.0.zip",
+        "download": "https://sourceforge.net/projects/crdroid/files/beryllium/6.x/crDroidAndroid-10.0-20191020-beryllium-v6.0.zip/download",
+        "timestamp": 1571605199,
+        "md5": "53c9a8435404d5d2327a3e3a4842f21c",
+        "size": 822112999,
+        "version": "6.0",
+        "buildtype": "Beta",
+        "forum": "https://forum.xda-developers.com/poco-f1/development/crdroid-v6-0-t3975085",
+        "gapps": "https://sourceforge.net/projects/opengapps/files/arm64/beta/",
+        "firmware": "https://google.com",
+        "modem": "https://google.com",
+        "bootloader": "https://google.com",
+        "recovery": "https://forum.xda-developers.com/poco-f1/development/official-orangefox-recovery-project-t3909194",
+        "paypal": "https://bit.ly/2GFfDHk",
+        "telegram": "https://t.me/crDroidPoco"
     }
   ]
 }
