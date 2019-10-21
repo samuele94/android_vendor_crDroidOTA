@@ -1,6 +1,23 @@
 Highlights & Device Specific Changes:
 
 ========================================
+21st October, 2019
+
+Build type: Beta
+Device: Oneplus 5/T (cheeseburger/dumpling)
+Device maintainer: neobuddy89
+Required firmware: 9.0.9
+
+Short changelog:
+* Fixed bootloop with open gapps on fresh install
+* Added Pixel Launcher and GalleryGo (experimental)
+* Initial support for accents, icon overlays, lockscreen clocks
+* Improved dark style
+* Changed QS tiles config to 4x2.
+* Stability improvements
+* cheeseburger/dumpling: Upstreamed kernel to v4.4.197
+
+========================================
 17th October, 2019
 
 Build type: Beta
