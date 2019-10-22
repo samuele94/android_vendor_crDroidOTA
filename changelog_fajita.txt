@@ -1,296 +1,3 @@
-====================
-     10-22-2019
-====================
-
-
-   * art/
-db74400199 Don't fail dual map if memfd isn't supported
-
-   * bootable/recovery/
-e7f0905e recovery: Add runtime checks for A/B vs traditional updates
-395f88e7 recovery: Allow bypassing signature verification on non-release builds
-41ae9416 recovery: symlink /sbin for script compatibility
-33aaa171 recovery: Blank screen on init
-c0323801 recovery: Also hide rescue mode from non eng builds
-84596991 recovery: Only show tests in eng builds
-b688a15f recovery: Expose reboot to recovery option
-da3aee23 recovery: init: mount pstore fs
-459dd5a4 recovery: Enable the menu for User builds
-1c35b83d recovery: Remove "Supported API" message
-075319b7 recovery: Add wipe system partition option
-
-   * device/oneplus/sdm845-common/
-6ede1ee sdm845-common: Build kernel with Clang
-
-   * frameworks/av/
-9c5f02842 CameraService: Support hooks for motorized camera
-13b316b47 stagefright: add changes related to high-framerates in CameraSource
-520bdef52 Camera: Add support for preview frame fd
-d89a6e3cb Camera: Add extensions to CameraClient
-06a921af5 camera: Allow devices to load custom CameraParameter code
-
-   * frameworks/base/
-ec900cc1557 Revert "base: Add overlay for Pixel Launcher"
-fd91622dacf Merge 'lineage-17.0' into 10.0
-acc575a460a FlashlightController: Disable sending intent
-67b4f79b602 Fix layout gravity for status bar right clock
-
-   * frameworks/native/
-8de9040bf libui: Allow invalid bits from callers conditionally
-6596d44a5 sensorservice: customize sensor fusion mag filter via prop
-a6a10a1ee sensorservice: Register orientation sensor if HAL doesn't provide it
-
-   * packages/apps/Bluetooth/
-553de0db1 SBC Dual Channel (SBC HD Audio) support
-e1be24958 Assume optional codecs are supported if were supported previously
-
-   * packages/apps/DeskClock/
-0d90618b1 Make new menu entry to link to cLock widget settings.
-4bc2e1a61 Provide upgrade path for cm-14.1 -> lineage-16.0
-
-   * packages/apps/Launcher3/
-1cf10065a Launcher3: Restore device profile
-b0d3f309c Launcher3: Clear text for shadespace subtext
-05f181b58 Launcher3: Update default workspace
-82c9eee18 Add Support for Icon Labels in Landscape Mode
-2dd2326ab Ensure fastscroller thumb & text play nice with themes
-3f35b5c86 Merge tag 'android-10.0.0_r4' into 10.0
-
-   * packages/apps/Nfc/
-be768d70 NFCService: Add sysprop to prevent FW download during boot  with NFC off.
-
-   * packages/services/Telecomm/
-92f4fc39 CallLog: Take into account multiple SIMs for sensitive numbers
-0c389523 Telecomm: Make sensitive phone numbers not to be shown in call log history.
-
-   * packages/services/Telephony/
-e275be8b3 Allow to disable the new scan API for manual network search.
-d65013de6 Don't start SIP service before decrypted
-11b7fb82b Fix non-protected broadcasts sent from phone process.
-385301b4f Telephony: Support muting by RIL command
-d6dfff547 Telephony: Add ERI configuration for U.S. Cellular
-
-   * system/bt/
-2cdeb5adc Explicit SBC Dual Channel (SBC HD) support
-3b1f52ebf Increase maximum Bluetooth SBC codec bitrate for SBC HD
-
-   * vendor/lineage/
-a94bec91 privapp-permissions: Allow Launcher3 to use android.permission.FORCE_STOP_PACKAGES
-07021379 privapp-permissions: Allow Gallery2 to use android.permission.MODIFY_AUDIO_ROUTING
-09de6e5f Revert "crdroid: Ship with PixelLauncher and GalleryGo"
-
-====================
-     10-21-2019
-====================
-
-   * android/
-f95f023 manifest: Track WallpaperPicker2
-
-   * build/make/
-394c564e2 releasetools: Implement system-mount script to support any recovery system mount
-5cf604039 build: Force system-as-root layout for backuptool
-02a5debc5 releasetools: squash backuptool support
-
-   * device/oneplus/sdm845-common/
-d7d6b7e audio_policy: enable configs
-0f62f78 sdm845-common: Make KeyHandler configurable
-8d0dbf1 sdm845-common: Compile libhwui in perf mode
-
-   * frameworks/base/
-f9edf705bb0 Temp: Remove dark tile
-f8531155c78 base: Use MD2 icon for missed call notification
-1d320962789 telephony: Conditionally ignore RSSNR signal level
-ba965e966bf base: Update some icons to MD2
-9a7ef0e567f Fix bootanimation stack overflow
-b5013ae15e0 SystemUI: Improve QS detail view layout
-1f0b3d7050c Recents: Fix NPE while changing themes
-4b115d56037 PebbleBerry: Support initial dark themes
-67c487dbfce base: themes: dont use colorPrimary for active qs
-3a734bcb70b base: Add overlay for Pixel Launcher
-d4967014fa9 Fix: Recent Apps not closing
-bbccb40dfb0 SystemUI: Update automatic brightness drawables
-26e26af0811 Merge pull request #305 from faham1997/10.0
-8fac3cf08f0 Camera: Expose Aux camera to apps present in the whitelist
-e958991b4b4 PebbleBerry: Remove accent picker
-
-   * packages/apps/Launcher3/
-d7bbdf5e8 Launcher3: Include manifests properly
-f88368813 Launcher3: Fix settings parent activity
-69f8d9dc4 Launcher3: Fix compilation errors
-95b03bed0 Launcher3: Make shadespace toggleable
-7803d0285 Replace Smartspace widget host view with Shade Space
-81318dc19 Launcher3: Extend notification listener with proxy
-12cce7388 Launcher3: Disable top/hotseat gradient
-618c712b0 Use Google's strings for Google now panel
-dfa91d844 RecentsUiFactory: Remove debug check in statusbar pulldown gesture
-4fad9ee4c Revert "Always enable swipe down gesture"
-24a41081d Launcher3: new icon for kill app option
-6531e896d New Recents: add kill action to app shortcuts popup
-b9bc23828 Launcher3: Rely on the internal theming isMainColorDark for dark gfeed
-ecd6e6c41 Decompiled feed lib with dark theme support
-49555562b Launcher3: Add updated Google Feed lib from Pixel 3 launcher
-ce85ea728 Launcher3: Allow swipe for google now to be optional
-9d294c7f6 Launcher3: Animate workspace when animating the Google now page
-0f108c2ae Launcher3: Make sure service is connected before trying to unbind
-ad88f7026 Launcher3: Support google now tab
-30531b140 Launcher3: Import reversed google now lib
-a96bc821e Launcher3: Add permission to allow updating database
-a71151ae8 Elevate to 'core/platform' app'
-6b63f3c45 Skip unneded package manager calls when checking QSB availability
-225a7a9f3 Set a toggle to show Search bar on first screen
-6e8003631 Launcher3: Add restart action for toggling settings
-9e979f093 Rearrange settings
-afa19d7a6 Launcher3: Fix launcher preview rendering
-e0a26f539 Fix divide by zero
-96a607244 Can't search out local app by Chinese
-0eff314b4 Fix pointer index out of range
-cb3356877 Allow resizing any widget
-4b14fdc62 Add back button to Settings
-63216a3ca Enable LAUNCHER3_PROMISE_APPS_IN_ALL_APPS
-1a9c7ecca Stability NullPointer issue
-37a5f89ae No Calendarwidget 4x4 widget displayed
-577089764 Launcher3: use common style for recents task menu divider
-185a47c2f Always enable swipe down gesture
-efb703486 Use ThemePicker as wallpaper picker package
-56f6c505f Revert "[DO NOT MERGE] Disable swipe down to pull noti shade for Q"
-21763fb0c Fix search bar incorrectly positioned after swiping up to home
-cb6b04733 Launcher3: Let's make the search bar on all apps round
-23ffe1fdb Launcher3: Update adaptive icon
-
-   * packages/apps/Settings/
-bde38071d5 Settings: Add Pixel UI
-e107337127 Settings: Update some icons to MD2
-9e9564444e Settings: Remove DarkUI pref controller
-
-   * packages/apps/WallpaperPicker2/
-fa1ae02 WallpaperPicker2: Don't export TopLevelPickerActivity
-3189f08 WallpaperPicker2: Remove launcher activity
-
-   * packages/apps/crDroidSettings/
-8c85f55e crdroid: Update dashboard icon
-cef542f1 crdroid: Remove accent settings
-
-   * vendor/addons/
-f5b7e29 addons: Add initial dark themes
-57d5dac addons: Add prebuilts for PixelLauncher and GalleryGo
-
-   * vendor/lineage/
-2a1784b5 crdroid: Support intiial dark themes
-c0752a44 crdroid: Ship with PixelLauncher and GalleryGo
-78f3c426 prebuilt: Add a script to simplify A-only recovery system mount
-
-====================
-     10-20-2019
-====================
-
-   * android/
-fedeff9 manifest: Track ThemePicker
-68a16fa Merge 'lineage-17.0' into 10.0
-8fcf96d manifest: Reenable cmdline tools
-b5e44fd manifest: Switch to our broadcom libbt fork & enable nfc
-
-   * external/openssh/
-9a2824af Fix compilation with Q boringssl
-
-   * frameworks/base/
-fb17d52e974 base: Update path to camera_click ogg
-d9ce44d00a9 PebbleBerry: Allow switching accents and light dark themes in better way
-5b47ff946f7 KernelCpuUidTimeReader: Decrease log level on non-eng builds
-6b736cceda5 PebbleBerry: Don't show system overlays on apps list
-ce3d10cb3dc Disable More Debugging
-89594c1f050 BurnInProtection: Fix null object reference with timer
-cb81d1210f2 Keyguard: Actually kill the Fancy Colon
-f71e4d8a675 base: SystemUI: reduce padding between clock and notification area
-16421643d85 SystemUI: Implement burn-in protection for status/navbar
-24e329b73b7 base: Update few drawables
-9c33d9665a3 SystemUI: assist: disable old Assistant animations
-3904a98a707 Add button to AppErrorDialog to upload crash information to dogbin
-b7eeb857e43 SystemUI: Hide back icon when screen pinned and gestural mode enabled
-7d90c33bbe0 SystemUI: Fix escape text when screen pinned and gestural mode enabled
-245ae477b5a ScreenPinningRequest: Fix recents button not appearing
-dcf80f08124 SystemUI: Add method for getting estimated battery time
-ee768864874 SystemUI: Remove build version from qs footer
-173b76dd20c SystemUI: Fix flickering issue when live wallpaper is showing on aod/pulsing
-2dfd5654601 Use new gradient dialog also for recovery/factory reset action
-7869b78997d AppStandbyController: Only check user standby setting
-98df1b6dcb7 Conditionally disable uncrypt for ota
-0250d6f0abf Shell: Don't show bugreport on DocumentsUI
-236d5d34246 SystemUI: Fix statusbar padding and layout for system icons
-
-   * hardware/qcom-caf/msm8916/audio/
-369d0427e audio_extn: Mark unused variable as void
-eb1688849 hal: Add libprocessgroup dependency to set_sched_policy users
-
-   * hardware/qcom-caf/msm8916/media/
-f9cd945b0 media: Fix compilation error for switch case
-15b410ef0 mm-video-v4l2: Use "base" enum type
-
-   * lineage-sdk/
-548063d4 lineage-sdk: Update path to ChargingStarted.ogg
-
-   * packages/apps/Launcher3/
-7e1114352 Rebrand to crDroid Home
-
-   * packages/apps/ThemePicker/
-dbb813c ThemePicker: Don't trash whole theme when missing icon preview
-cc24387 ThemePicker: Change icon color
-
-   * packages/apps/crDroidSettings/
-34c1296e PebbleBerry: Revive
-a4527275 New Crowdin translations (#478)
-e8c75c4e New Crowdin translations (#477)
-c4f32806 New translations cr_strings.xml (Italian) (#476)
-6ee076cc New Crowdin translations (#475)
-
-   * system/core/
-0e194008d Merge 'lineage-17.0' into 10.0
-29c35aa49 adb: Add wait-for-online command
-
-   * vendor/addons/
-4824605 addons: Add PixelThemes apk
-e6de4b8 addons: Add category for accents
-1971ea6 addons: Add back accents
-
-   * vendor/lineage/
-8f323b45 crdroid: Build ThemePicker and PixelThemes
-5e1ba9c0 common: Add nano to PRODUCT_PACKAGES
-3314d07f Revert "config: Use tether automatic upstream selection"
-da634876 common: Clean up debug packages
-75f3c77e kernel: Define DTBS_OUT path for dtb.img building
-0ae167b7 crdroid: Compile accent packages
-
-====================
-     10-19-2019
-====================
-
-   * android/
-b21c35a manifest: switch to our fork of system/netd
-308c571 manifest: Switch to our qcom bt, gps & media forks
-
-   * external/openssh/
-34845718 Fix build breakage
-10d5b42f Remove assumption that _PATH_BSHELL is a compile-time constant.
-6732e15f Use -Werror and -Wno-error in external/openssh
-123923fc Revert "openssh: don't spam warnings as errors"
-a4760f05 Revert "openssh: Silence build warnings"
-aaab86a1 Move away from GLOBAL_CFLAGS for ssh configuration
-
-   * hardware/broadcom/libbt/
-ed10531 libbt: configure audio codec right after firmware
-0864586 libbt-vendor: add support for samsung bluetooth
-9d8a891 libbt: Add support for using two stop bits
-6e60320 libbt: Add btlock support
-103cb6e libbt: Only allow upio_start_stop_timer on 32bit arm
-27f47c4 libbt: Add prepatch support
-
-   * hardware/qcom-caf/common/
-ce26f7c Remove check for bootctrl from hardware/qcom guard
-
-   * hardware/qcom/bt/
-05c4596 Revert "msm8974: remove from top level makefile"
-
-   * vendor/lineage/
-041d4ab4 crdroid: 4 columns and 2 rows
 
 ====================
      10-18-2019
@@ -305,6 +12,14 @@ e325aef sepolicy: Allow CPUInfo access to thermal sysfs
 
    * frameworks/base/
 0533d84ae39 Whitelist WRITE_DEVICE_CONFIG for shell
+
+   * hardware/broadcom/libbt/
+ed10531 libbt: configure audio codec right after firmware
+0864586 libbt-vendor: add support for samsung bluetooth
+9d8a891 libbt: Add support for using two stop bits
+6e60320 libbt: Add btlock support
+103cb6e libbt: Only allow upio_start_stop_timer on 32bit arm
+27f47c4 libbt: Add prepatch support
 
    * packages/apps/Updater/
 5d637ab Updater: Update few tags
@@ -518,31 +233,11 @@ c3a456b2 Merge tag 'android-10.0.0_r4' into HEAD
 ====================
 
 
-   * device/oneplus/sdm845-common/
-9169c64 sdm845-common: Telephony: Add inject support for MultiSimSettingController
-3fc6baa sdm845-common: Telephony: Move qti-telephony-common to product
-4b1948b sdm845-common: Telephony: Add telephony_injection file
-32bed5f sdm845-common: FR53248: Android Q: Remove hidden API references in ims.apk
-998d7d4 sdm845-common: Add support for telephony hidl wrapper
-0981302 sdm845-common: IMS: decouple ims-ext-common from boot jars
-28d5d27 sdm845-common: Enable FEATURE_TELEPHONY_IMS for these devices
-6afed5e sdm845-common: I'm sorry.
-33108e6 sdm845-common: Update device/qcom/sepolicy include paths
-01a2181 sdm845-common: Update aptX blobs from crosshatch
-c2779fd sdm845-common: Update blobs from Android Q Beta 3
-f7f410c sdm845-common: Update MAC randomization overlay location
-09717a7 sdm845-common: overlay: move audio panel to left side
-fc9b986 sdm845-common: Enable dash charging overlay
-
    * packages/apps/crDroidSettings/
 20809223 crdroid: Re-enable rounded corner customization
 
    * system/core/
 7455ee55f init: Don't run update_sys_usb_config if /data isn't mounted
-
-   * tools/repohooks/
-ca479fc signals: drop old signal workaround
-7b30f4d pre-upload: require Python 2.7.5+ and 3.4+
 
    * vendor/qcom/opensource/power/
 66deecb power: Support power profiles on legacy platforms
@@ -609,6 +304,22 @@ a5c3f0b power: Refactor TARGET_TAP_TO_WAKE_NODE
 ====================
 
 
+   * device/oneplus/sdm845-common/
+9169c64 sdm845-common: Telephony: Add inject support for MultiSimSettingController
+3fc6baa sdm845-common: Telephony: Move qti-telephony-common to product
+4b1948b sdm845-common: Telephony: Add telephony_injection file
+32bed5f sdm845-common: FR53248: Android Q: Remove hidden API references in ims.apk
+998d7d4 sdm845-common: Add support for telephony hidl wrapper
+0981302 sdm845-common: IMS: decouple ims-ext-common from boot jars
+28d5d27 sdm845-common: Enable FEATURE_TELEPHONY_IMS for these devices
+6afed5e sdm845-common: I'm sorry.
+33108e6 sdm845-common: Update device/qcom/sepolicy include paths
+01a2181 sdm845-common: Update aptX blobs from crosshatch
+c2779fd sdm845-common: Update blobs from Android Q Beta 3
+f7f410c sdm845-common: Update MAC randomization overlay location
+09717a7 sdm845-common: overlay: move audio panel to left side
+fc9b986 sdm845-common: Enable dash charging overlay
+
    * external/ant-wireless/ant_native/
 df797ba ant_native: Fix    * pathmap
 
@@ -643,6 +354,8 @@ fb330c9 AudioFX: Add support for usb headset devices
 5742e571 crdroid: Re-enable keyboard settings
 
    * tools/repohooks/
+ca479fc signals: drop old signal workaround
+7b30f4d pre-upload: require Python 2.7.5+ and 3.4+
 b3b40b5 pre-upload: drop old repo __file__ workaround
 cfedbd7 pylintrc: enable more python3 checks
 
@@ -667,26 +380,10 @@ a230106 msm8084: Handle race condition in HAL post SSR
    * lineage-sdk/
 f2766de1 NetworkTraffic: Do not consider doze as screen on
 
-   * packages/apps/Settings/
-84229db5a3 Settings: Move charging sound setting to crdroid settings
-
    * packages/apps/crDroidSettings/
 0508b5c7 BatteryBar [2/2]
 55761651 crdroid: Bring up Misc fragment
 b0cc49dc crdroid: Bring up UI fragment
-3a132bbc crdroid: Bring up Sound settings fragment
-
-   * vendor/oneplus/
-edde2133 sdm845-common: Update aptX blobs from crosshatch
-c2efd283 sdm845-common: Update blobs to Android Q Beta 3
-38a5d650 sdm845-common: Regenerate makefiles
-71d00a14 sm8150-common: regenerate
-e992792a sm8150-common: update blobs from OOS 10.0.GM21AA
-dda73838 sm8150-common: add wfdhcp blobs
-a7436e33 sm8150-common: sync blobs with device tree
-13b2cf28 sm8150-common: sync with device tree
-306d6dbc sm8150-common: sync blobs with device tree
-6a5d7118 sm8150-common: re-extract blobs from oos 10
 
 ====================
      10-13-2019
@@ -702,6 +399,22 @@ a7436e33 sm8150-common: sync blobs with device tree
    * packages/apps/LineageParts/
 7f6e363 Remove Expanded Desktop entry in Settings
 
+   * packages/apps/Settings/
+84229db5a3 Settings: Move charging sound setting to crdroid settings
+
    * packages/apps/crDroidSettings/
+3a132bbc crdroid: Bring up Sound settings fragment
 c2afff8f crdroid: Bring up Quick Settings fragment
+
+   * vendor/oneplus/
+edde2133 sdm845-common: Update aptX blobs from crosshatch
+c2efd283 sdm845-common: Update blobs to Android Q Beta 3
+38a5d650 sdm845-common: Regenerate makefiles
+71d00a14 sm8150-common: regenerate
+e992792a sm8150-common: update blobs from OOS 10.0.GM21AA
+dda73838 sm8150-common: add wfdhcp blobs
+a7436e33 sm8150-common: sync blobs with device tree
+13b2cf28 sm8150-common: sync with device tree
+306d6dbc sm8150-common: sync blobs with device tree
+6a5d7118 sm8150-common: re-extract blobs from oos 10
 
